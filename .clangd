@@ -1,0 +1,19 @@
+If:
+  PathMatch: .*\.cpp
+
+CompileFlags:
+  Add:
+    - "-std=c++20"
+    - "-I./vendor"
+    - "-I./include"
+
+---
+
+If:
+  PathMatch: .*\.c
+
+CompileFlags:
+  Add:
+    - "-std=c99"
+    - "-I./vendor"
+    - "-I./include"
